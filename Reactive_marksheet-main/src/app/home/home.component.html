@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <form [formGroup]="getData" class="example-form" (submit)="onSubmit(getData.value)">
+            <mat-form-field class="example-full-width">
+                <mat-label>Enrollment Number</mat-label>
+                <input matInput formControlName="Enu">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="Name">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Ionic</mat-label>
+                <input matInput formControlName="Ionic"> 
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Machine Learning</mat-label>
+                <input matInput formControlName="Ml"> 
+            </mat-form-field>
+            <br>
+            <mat-form-field class="example-full-width">
+                <mat-label>Big Data Analytics</mat-label>
+                <input matInput formControlName="Big_data"> 
+            </mat-form-field>
+            <br>
+            <button class="noOutlinebutton" mat-raised-button color="primary">Show Result</button>
+        </form>
+        
+    </body>
+</html>

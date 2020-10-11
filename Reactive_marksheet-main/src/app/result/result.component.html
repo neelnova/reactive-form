@@ -1,0 +1,62 @@
+
+<h1>Result</h1>
+<p>Enrollment Number:{{enu}}</p>
+    <br>
+<p>Name:{{enu}}</p>
+
+<table class="table">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Subject Name</th>
+    <th scope="col">Marks out of 100</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ionic</td>
+    <td>{{ionic}}</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Machin Learning</td>
+    <td>{{ml}}</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Big data Analytics</td>
+    <td>{{big_data}}</td>
+  </tr>
+  <tr>
+    <td></td>
+    <th>Total:</th>
+    <th>{{total}}</th>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td></td>
+    <th>Percentage</th>
+    <th>{{percentage}}</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th>Grade</th>
+    
+      <div *ngIf="percentage >= 85">
+          <th>A+ Grade</th>
+      </div>
+      <div *ngIf="percentage < 85 && percentage >=70">
+        <th>A Grade</th>
+    </div>
+    <div *ngIf="percentage < 70 && percentage >=60">
+      <th>B Grade</th>
+  </div>
+  <div *ngIf="percentage < 60 && percentage >=40">
+    <th>c Grade</th>
+</div>
+<div *ngIf="percentage < 40">
+  <th>Fail</th>
+</div>
+    
+
+  </tr>
+
+</table>
